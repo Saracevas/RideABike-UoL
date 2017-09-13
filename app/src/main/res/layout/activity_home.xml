@@ -1,0 +1,98 @@
+<ScrollView
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.glados.rideabikeuol.app.Activities.Home">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#43bd00"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/temp"
+        android:gravity="center_horizontal"
+        android:text="RideABike@UoL Dashboard" />
+
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#999999"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Weather" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:weightSum="2"
+        android:layout_below="@+id/welcome">
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav"
+            android:src="@drawable/nav"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/station"
+            android:src="@drawable/stations"
+            android:layout_weight="1"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:weightSum="2"
+        android:layout_below="@+id/linearLayout1">
+
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/balance"
+        android:src="@drawable/balance"
+        android:layout_weight="1"
+        android:background="@null" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile"
+        android:src="@drawable/user"
+        android:layout_weight="1"
+        android:background="@null" />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

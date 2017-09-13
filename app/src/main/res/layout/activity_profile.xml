@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/logo"
+    android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Firstname"
+        android:id="@+id/textView"
+        android:textColor="#43bd00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#43bd00" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstname"
+        android:paddingTop="3dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Lastname"
+        android:id="@+id/textView"
+        android:textColor="#43bd00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#43bd00" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/surname"
+        android:paddingTop="3dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/textView"
+        android:textColor="#43bd00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#43bd00" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:paddingTop="3dp"
+        android:textColor="#000"/>
+</LinearLayout>

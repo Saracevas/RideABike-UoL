@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.glados.rideabikeuol.app" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <activity android:name="com.example.barcode.CatalogActivity" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="RideABike@UoL"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Activities.Login"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Home" >
+        </activity>
+        <activity
+            android:name=".Activities.Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".Activities.Profile"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".Activities.Balance"
+            android:label="@string/title_activity_balance" >
+        </activity>
+        <activity
+            android:name=".Activities.Stations"
+            android:label="@string/title_activity_stations" >
+        </activity>
+        <activity
+            android:name=".Activities.Docks"
+            android:label="@string/title_activity_docks" >
+        </activity>
+        <activity
+            android:name=".Activities.Navigation"
+            android:label="@string/title_activity_route_planner" >
+        </activity>
+        <activity
+            android:name=".Activities.Review"
+            android:label="@string/title_activity_review" >
+        </activity>
+    </application>
+
+</manifest>
